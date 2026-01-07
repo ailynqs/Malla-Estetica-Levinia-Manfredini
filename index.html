@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malla Cosmetología</title>
-    
-    <link rel="stylesheet" href="./estilos.css">
+    <style>
+/* Pega aquí todo el contenido que tienes en tu archivo estilos.css */
+:root {
+    --primary-dark: #1a3a5f;
+    --primary-blue: #3498db;
+    --secondary-blue: #ebf5fb;
+    --locked-gray: #d5dbdb;
+    --success-green: #27ae60;
+    --text-color: #2c3e50;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+}
+#malla-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+.semestre-col {
+    min-width: 250px;
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    border-top: 5px solid var(--primary-blue);
+}
+.ramo {
+    background: var(--secondary-blue);
+    border: 1px solid #d6eaf8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.ramo.aprobado {
+    background-color: var(--success-green) !important;
+    color: white;
+    text-decoration: line-through;
+}
+.ramo.bloqueado {
+    background-color: var(--locked-gray);
+    color: #7f8c8d;
+    cursor: not-allowed;
+}
+</style>
     
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
 </head>
